@@ -305,7 +305,7 @@ EXAMPLES = r'''
           name: Scumm bar
           location: Monkey island
           # Value
-          _value: unreal 
+          _value: unreal
           # Subnodes
           _:
             - floor: Pirate hall
