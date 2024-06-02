@@ -305,7 +305,7 @@ EXAMPLES = r'''
           name: Scumm bar
           location: Monkey island
           # Value
-          _value: unreal
+          +value: unreal
           # Subnodes
           _:
             - floor: Pirate hall
@@ -761,7 +761,7 @@ def child_to_element(module, child, in_type):
             (key, value) = next(iteritems(child))
             if isinstance(value, MutableMapping):
                 children = value.pop('_', None)
-                child_value = value.pop('_value', None)
+                child_value = value.pop('+value', None)
 
                 node = etree.Element(key, value)
 
